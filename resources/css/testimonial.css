@@ -1,0 +1,117 @@
+/* Basic styling for the testimonial container */
+
+.testimonial-container {
+    width: 100%;
+    max-width: 500px;
+    /* Adjust as needed */
+    height: auto;
+    position: relative;
+    /* overflow: hidden; */
+    /* Hide vertical scrollbar */
+    margin: 0 auto;
+}
+
+
+/* Styling for testimonials */
+
+.testimonial {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: none;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
+    /* Add transition for sliding animation */
+    transform: translateX(100%);
+    /* Initial position for slide animation */
+}
+
+
+/* Hide the scrollbar */
+
+.testimonial-container::-webkit-scrollbar {
+    display: none;
+    /* Set width to 0 to hide the scrollbar */
+}
+
+.testimonial p {
+    margin: 0;
+}
+
+.author {
+    font-weight: bold;
+}
+
+
+/* Add animation for fading between testimonials */
+
+.fade-in {
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Add animation for sliding in */
+
+.slide-in {
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+
+/* Add animation for sliding out */
+
+.slide-out {
+    animation: slideOut 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        max-width: 90%;
+        /* Adjust the maximum width for smaller screens */
+        height: auto;
+        /* Allow content to expand beyond viewport height */
+        /* Allow vertical scrolling */
+    }
+    .testimonial {
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+    }
+    .testimonial-container::-webkit-scrollbar {
+        width: 0;
+        /* Set width to 0 to hide the scrollbar */
+    }
+}

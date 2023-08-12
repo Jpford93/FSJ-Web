@@ -1,0 +1,35 @@
+/* Setup */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    margin-top: 60px;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {}
+
+
+/* tablet and Medium Screen */
+
+@media (min-width: 577px) and (max-width: 768px) {}
+
+
+/* Desktop and large screen */
+
+@media (min-width: 769px) and (max-width: 992px) {}
+
+
+/* X-Large Screen */
+
+@media (max-width: 993px) {}
