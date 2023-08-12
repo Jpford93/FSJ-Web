@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="./resources/css/main.css">
-    <link rel="stylesheet" href="./resources/css/index.css">
+    <link rel="stylesheet" href="./resources/css/cart.css">
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
 </head>
 
 <body>
     <main role="main">
         <div class="container">
-            <div class="row">
+            <div class="row my-4">
                 <div class="col-6">
                     <h2>Continue Shopping</h2>
                 </div>
@@ -22,48 +22,124 @@
                     <button>Shop Now</button>
                 </div>
             </div>
-            <div class="row">
+            <div class="row my-5">
                 <h2>Your Order</h2>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="" alt="" class="img-fluid">
-                            <h4>Passion Fruit Juice</h4>
-                            <small>10 Juices</small>
-                            <small>$7.99</small>
+                    <div class="row mb-4" style="border-bottom: 1px solid black;">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                                    <div class="text-center">
+                                        <img src="https://s3-alpha-sig.figma.com/img/fd09/6bd8/a5e02a5a5d9a80cf67b11ce5ce3ad40b?Expires=1692576000&Signature=Ja4P59iEgIyRqTLHZcKbofbtsb6rEO0ImjZpZ1Aax-FUd159q-W06iy6m0v3BwXfQCWvGu4cgukuXdYtbUJPcoDIPHWQ-nKub7sr2KRpEVFmdz0Sv5ptfIqZJ3KawfPQ5eeeZ7lhLVSXb83SDzZbY2E0Kdp1jcwRL-CRDLl3JHuIORw0eNcn2OfYnAKB8Mo~RnP3VC3xdxiP5I0fO3T0ONUc~Zq5L-5OtH5Nc4tvbjI2PMxUJoENJOjrUG0WsXSp9vm0jekWe1lTQ-hTxP9XqprnBtHNHvT2WEZF2GMaFukPtpaQhyRt0PP~jOUXIWZYKqfRfqliSwZ5PxOthMa2sg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                            alt="" class="cart-item img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                                    <div class="">
+                                        <h5>Passion Fruit Juice</h5>
+                                        <small>10 Juices - $7.99</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>Quantity</h3>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="">
+                                <h5>Quantity</h5>
+                                <div class="quantity-button my-4">
+                                    <button class="minus">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="plus">+</button>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>Price</h3>
-                            <h2>$79.99</h2>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="mb-3">
+                                <h5>Price</h5>
+                                <h4>$79.99</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="row">
-                        <h4>New Customer? Create an account</h4>
+                    <div class="row mb-4">
+                        <h6>New Customer? <a href="">Create an account</a></h6>
                     </div>
                     <div class="row">
-                        <div class="col-6"> Subtotal</div>
-                        <div class="col-6">$79.99</div>
-                        <div class="col-6">discount</div>
-                        <div class="col-6">$0.00</div>
-                        <div class="col-6">Total</div>
-                        <div class="col-6">$79.99</div>
+                        <div class="col-6 mb-3">
+                            <h4>Subtotal</h4>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <h4>$79.99</h4>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <h4>discount</h4>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <h4>$0.00</h4>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <h4>$79.99</h4>
+                        </div>
                     </div>
-                    <div>
-                        <button>Continue to payment</button>
+                    <div class="my-4">
+                        <button class="rounded-5">Continue to payment</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                    <div class="mb-4 mb-sm-5 mb-md-5 mb-lg-5">
+                        <h5>Let's Connect!</h5>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <form class="d-flex" role="subscribe">
+                            <input class="form-control me-2" type="email" placeholder="Your Email Address" aria-label="Subscribe">
+                            <button class="btn btn-outline-success rounded-5" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 col-xxl-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <h5>Explore</h5>
+                            <ul class="footer_menu">
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">All Products</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <h5>Help</h5>
+                            <ul class="footer_menu">
+                                <li><a href="">My Account</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <h5>Legal</h5>
+                            <ul class="footer_menu">
+                                <li><a href="">Terms of Service</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <small>Copyright 2023</small>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./resources/Js/bootstrap.bundle.min.js"></script>
 
 </body>

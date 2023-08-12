@@ -1,0 +1,36 @@
+/* Basic styling for the quantity button container */
+
+.quantity-button {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+
+
+/* Styling for minus and plus buttons */
+
+.minus,
+.plus {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #ddd;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* Styling for quantity display */
+
+.quantity {
+    font-size: 18px;
+}
+
+img.cart-item {
+    object-fit: cover;
+    width: 90px;
+    height: 90px;
+    border-radius: 25px;
+}

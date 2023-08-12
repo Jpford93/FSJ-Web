@@ -1,5 +1,12 @@
 /* Setup */
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,6 +19,33 @@ main {
 
 footer {
     flex-shrink: 0;
+}
+
+.skip-link {
+    position: fixed;
+    top: -40px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+
+/* Footer */
+
+ul.footer_menu {
+    padding-left: 0;
+}
+
+.footer_menu>li {
+    list-style: none;
+    line-height: 2.8;
+}
+
+.footer_menu>li>a {
+    text-decoration: none;
 }
 
 
