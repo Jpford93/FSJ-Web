@@ -33,6 +33,10 @@ footer {
     transition: top 0.3s;
 }
 
+a {
+    text-decoration: none
+}
+
 
 /* Business Branding */
 
@@ -118,7 +122,7 @@ ul.footer_menu {
 
 @media (max-width: 576px) {
     body {
-        margin-top: 40px;
+        margin-top: 70px;
     }
 }
 
@@ -127,7 +131,7 @@ ul.footer_menu {
 
 @media (min-width: 577px) and (max-width: 768px) {
     body {
-        margin-top: 50px;
+        margin-top: 70px;
     }
 }
 
@@ -136,7 +140,7 @@ ul.footer_menu {
 
 @media (min-width: 769px) and (max-width: 992px) {
     body {
-        margin-top: 50px;
+        margin-top: 70px;
     }
 }
 
@@ -145,6 +149,6 @@ ul.footer_menu {
 
 @media (min-width: 993px) {
     body {
-        margin-top: 50px;
+        margin-top: 70px;
     }
 }
