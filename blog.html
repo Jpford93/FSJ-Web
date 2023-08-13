@@ -5,143 +5,358 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="./resources/css/main.css">
-    <link rel="stylesheet" href="./resources/css/index.css">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Mulish:wght@200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./resources/css/main.css">
+    <link rel="stylesheet" href="./resources/css/header.css">
+    <link rel="stylesheet" href="./resources/css/index.css">
+
 </head>
 
 <body>
-    <main role="main">
-        <div class="container">
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    <!-- menu -->
+    <header id="desktop-menu">
+        <!-- desktop -->
+        <nav class="container">
             <div class="row">
-                <h1>Blog</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <img src="" alt="" class="img-fluid">
-                    <div>
-                        <h3>The Health Benefits</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
-                        <div class="col-6">Read More</div>
+                <div class="col-2">
+                    <div class="logo">
+                        <h2><a href="./index.html">FSJ</a></h2>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <img src="" alt="" class="img-fluid">
-                    <div>
-                        <h3>The Health Benefits</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
-                        <div class="col-6">Read More</div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <img src="" alt="" class="img-fluid">
-                    <div>
-                        <h3>The Health Benefits</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
-                        <div class="col-6">Read More</div>
+                <div class="col-6">
+                    <div class="main_menu my-2">
+                        <ul>
+                            <li>Shop juices</li>
+                            <li>Shop Salads</li>
+                            <li>Shop Soups</li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <img src="" alt="" class="img-fluid">
-                    <div>
-                        <h3>The Health Benefits</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
-                        <div class="col-6">Read More</div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <img src="" alt="" class="img-fluid">
-                    <div>
-                        <h3>The Health Benefits</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
-                        <div class="col-6">Read More</div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <img src="" alt="" class="img-fluid">
-                    <div>
-                        <h3>The Health Benefits</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
-                        <div class="col-6">Read More</div>
+                <div class="col-4">
+                    <div class="row  d-flex justify-content-end">
+                        <div class="col-4" style="width: 260px;">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success rounded-5" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="col-4" style="width: 60px;">
+                            <div class="icon-desktop-login ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16" fill="none">
+                                    <path d="M16 7.992C16 3.58 12.416 0 8 0C3.584 0 0 3.58 0 7.992C0 10.422 1.104 12.612 2.832 14.082C2.848 14.098 2.864 14.098 2.864 14.114C3.008 14.226 3.152 14.338 3.312 14.45C3.392 14.498 3.456 14.561 3.536 14.625C4.85807 15.5214 6.41871 16.0004 8.016 16C9.61329 16.0004 11.1739 15.5214 12.496 14.625C12.576 14.577 12.64 14.514 12.72 14.465C12.864 14.354 13.024 14.242 13.168 14.13C13.184 14.114 13.2 14.114 13.2 14.098C14.896 12.611 16 10.422 16 7.992ZM8 14.993C6.496 14.993 5.12 14.513 3.984 13.714C4 13.586 4.032 13.459 4.064 13.331C4.15934 12.9841 4.29917 12.651 4.48 12.34C4.656 12.036 4.864 11.764 5.12 11.524C5.36 11.284 5.648 11.061 5.936 10.885C6.24 10.709 6.56 10.581 6.912 10.485C7.26674 10.3894 7.6326 10.3413 8 10.342C9.09065 10.3343 10.1412 10.7526 10.928 11.508C11.296 11.876 11.584 12.308 11.792 12.803C11.904 13.091 11.984 13.395 12.032 13.714C10.8512 14.5442 9.44343 14.9907 8 14.993ZM5.552 7.593C5.41102 7.27022 5.34013 6.9212 5.344 6.569C5.344 6.218 5.408 5.866 5.552 5.546C5.696 5.226 5.888 4.939 6.128 4.699C6.368 4.459 6.656 4.268 6.976 4.124C7.296 3.98 7.648 3.916 8 3.916C8.368 3.916 8.704 3.98 9.024 4.124C9.344 4.268 9.632 4.46 9.872 4.699C10.112 4.939 10.304 5.227 10.448 5.546C10.592 5.866 10.656 6.218 10.656 6.569C10.656 6.937 10.592 7.273 10.448 7.592C10.309 7.90727 10.1138 8.19461 9.872 8.44C9.62653 8.68149 9.33919 8.87633 9.024 9.015C8.36283 9.28671 7.62117 9.28671 6.96 9.015C6.64481 8.87633 6.35747 8.68149 6.112 8.44C5.86981 8.19819 5.67929 7.91068 5.552 7.593ZM12.976 12.899C12.976 12.867 12.96 12.851 12.96 12.819C12.8026 12.3184 12.5707 11.8444 12.272 11.413C11.973 10.9784 11.6056 10.5951 11.184 10.278C10.862 10.0358 10.513 9.83175 10.144 9.67C10.3119 9.55925 10.4674 9.43085 10.608 9.287C10.8465 9.0515 11.056 8.7883 11.232 8.503C11.5864 7.92081 11.7694 7.25049 11.76 6.569C11.7649 6.06451 11.667 5.56432 11.472 5.099C11.2795 4.65064 11.0025 4.24356 10.656 3.9C10.31 3.56003 9.90288 3.28859 9.456 3.1C8.98991 2.90539 8.48906 2.80774 7.984 2.813C7.47887 2.80806 6.97802 2.90605 6.512 3.101C6.06125 3.28919 5.65311 3.56638 5.312 3.916C4.97204 4.26159 4.70059 4.66842 4.512 5.115C4.31705 5.58032 4.21905 6.08051 4.224 6.585C4.224 6.937 4.272 7.273 4.368 7.592C4.464 7.928 4.592 8.232 4.768 8.519C4.928 8.807 5.152 9.063 5.392 9.303C5.536 9.447 5.696 9.574 5.872 9.686C5.50184 9.85206 5.15272 10.0615 4.832 10.31C4.416 10.63 4.048 11.013 3.744 11.429C3.44226 11.8586 3.21008 12.3331 3.056 12.835C3.04 12.867 3.04 12.899 3.04 12.915C1.776 11.636 0.992 9.91 0.992 7.992C0.992 4.14 4.144 0.991 8 0.991C11.856 0.991 15.008 4.14 15.008 7.992C15.0059 9.83196 14.2753 11.5962 12.976 12.899Z" fill="black"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="col-4" style="width: 60px;">
+                            <div class="icon-desktop-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_53_16)">
+                                      <path d="M9 20C9.26522 20 9.51957 20.1054 9.70711 20.2929C9.89464 20.4804 10 20.7348 10 21C10 21.2652 9.89464 21.5196 9.70711 21.7071C9.51957 21.8946 9.26522 22 9 22C8.73478 22 8.48043 21.8946 8.29289 21.7071C8.10536 21.5196 8 21.2652 8 21C8 20.7348 8.10536 20.4804 8.29289 20.2929C8.48043 20.1054 8.73478 20 9 20ZM16 20C16.2652 20 16.5196 20.1054 16.7071 20.2929C16.8946 20.4804 17 20.7348 17 21C17 21.2652 16.8946 21.5196 16.7071 21.7071C16.5196 21.8946 16.2652 22 16 22C15.7348 22 15.4804 21.8946 15.2929 21.7071C15.1054 21.5196 15 21.2652 15 21C15 20.7348 15.1054 20.4804 15.2929 20.2929C15.4804 20.1054 15.7348 20 16 20ZM3.495 2.631L3.6 2.701L5.308 3.981C5.59866 4.1991 5.82441 4.49226 5.961 4.829L6.021 5H18.867C19.1381 4.99993 19.4064 5.05498 19.6556 5.16181C19.9047 5.26863 20.1296 5.425 20.3165 5.62141C20.5033 5.81783 20.6483 6.05018 20.7426 6.30436C20.8369 6.55854 20.8786 6.82923 20.865 7.1L20.852 7.248L20.395 10.903C20.2579 12.0029 19.7591 13.0261 18.9771 13.8117C18.1951 14.5973 17.1743 15.1008 16.075 15.243L15.849 15.266L8.536 15.876L8.796 17H17.5C17.7549 17.0003 18 17.0979 18.1854 17.2728C18.3707 17.4478 18.4822 17.687 18.4972 17.9414C18.5121 18.1958 18.4293 18.4464 18.2657 18.6418C18.1021 18.8373 17.8701 18.9629 17.617 18.993L17.5 19H8.796C8.3716 19.0001 7.95819 18.8651 7.61555 18.6147C7.27291 18.3643 7.01881 18.0114 6.89 17.607L6.847 17.45L4.107 5.58L2.4 4.3C2.2049 4.15377 2.06994 3.9413 2.02051 3.70254C1.97109 3.46378 2.01059 3.21519 2.1316 3.00351C2.25261 2.79184 2.44678 2.63167 2.67761 2.55312C2.90843 2.47458 3.16 2.48307 3.385 2.577L3.495 2.631ZM18.867 7H6.487L8.082 13.906L15.682 13.273C16.3679 13.2159 17.0134 12.9247 17.5101 12.4482C18.0068 11.9718 18.3245 11.339 18.41 10.656L18.867 7Z" fill="black"/>
+                                    </g>
+        
+                                  </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row my-5">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </nav>
+    </header>
+    <!-- end -->
+    <!-- mobile -->
+    <header id="mobile-menu">
+        <nav class="container-fluid">
+            <div class="row my-4 d-flex">
+                <div class="col-4">
+                    <div class="mobile_icon_menu d-flex justify-content-around">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 57 30" fill="none">
+                        <rect width="57" height="6" rx="3" fill="black"/>
+                        <rect y="12" width="57" height="6" rx="3" fill="black"/>
+                        <rect y="24" width="57" height="6" rx="3" fill="black"/>
+                      </svg>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="text-center">
+                        <h2><a href="./index.html">FSJ</a></h2>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mobile_icon_cart d-flex justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_53_16)">
+                              <path d="M9 20C9.26522 20 9.51957 20.1054 9.70711 20.2929C9.89464 20.4804 10 20.7348 10 21C10 21.2652 9.89464 21.5196 9.70711 21.7071C9.51957 21.8946 9.26522 22 9 22C8.73478 22 8.48043 21.8946 8.29289 21.7071C8.10536 21.5196 8 21.2652 8 21C8 20.7348 8.10536 20.4804 8.29289 20.2929C8.48043 20.1054 8.73478 20 9 20ZM16 20C16.2652 20 16.5196 20.1054 16.7071 20.2929C16.8946 20.4804 17 20.7348 17 21C17 21.2652 16.8946 21.5196 16.7071 21.7071C16.5196 21.8946 16.2652 22 16 22C15.7348 22 15.4804 21.8946 15.2929 21.7071C15.1054 21.5196 15 21.2652 15 21C15 20.7348 15.1054 20.4804 15.2929 20.2929C15.4804 20.1054 15.7348 20 16 20ZM3.495 2.631L3.6 2.701L5.308 3.981C5.59866 4.1991 5.82441 4.49226 5.961 4.829L6.021 5H18.867C19.1381 4.99993 19.4064 5.05498 19.6556 5.16181C19.9047 5.26863 20.1296 5.425 20.3165 5.62141C20.5033 5.81783 20.6483 6.05018 20.7426 6.30436C20.8369 6.55854 20.8786 6.82923 20.865 7.1L20.852 7.248L20.395 10.903C20.2579 12.0029 19.7591 13.0261 18.9771 13.8117C18.1951 14.5973 17.1743 15.1008 16.075 15.243L15.849 15.266L8.536 15.876L8.796 17H17.5C17.7549 17.0003 18 17.0979 18.1854 17.2728C18.3707 17.4478 18.4822 17.687 18.4972 17.9414C18.5121 18.1958 18.4293 18.4464 18.2657 18.6418C18.1021 18.8373 17.8701 18.9629 17.617 18.993L17.5 19H8.796C8.3716 19.0001 7.95819 18.8651 7.61555 18.6147C7.27291 18.3643 7.01881 18.0114 6.89 17.607L6.847 17.45L4.107 5.58L2.4 4.3C2.2049 4.15377 2.06994 3.9413 2.02051 3.70254C1.97109 3.46378 2.01059 3.21519 2.1316 3.00351C2.25261 2.79184 2.44678 2.63167 2.67761 2.55312C2.90843 2.47458 3.16 2.48307 3.385 2.577L3.495 2.631ZM18.867 7H6.487L8.082 13.906L15.682 13.273C16.3679 13.2159 17.0134 12.9247 17.5101 12.4482C18.0068 11.9718 18.3245 11.339 18.41 10.656L18.867 7Z" fill="black"/>
+                            </g>
+
+                          </svg>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="menu_pop">
+                    <div class="menu_close_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M16.8873 15.7376C16.9628 15.8131 17.0227 15.9028 17.0636 16.0014C17.1044 16.1 17.1254 16.2057 17.1254 16.3125C17.1254 16.4193 17.1044 16.525 17.0636 16.6236C17.0227 16.7222 16.9628 16.8118 16.8873 16.8873C16.8118 16.9628 16.7222 17.0227 16.6236 17.0636C16.525 17.1044 16.4193 17.1254 16.3125 17.1254C16.2057 17.1254 16.1 17.1044 16.0014 17.0636C15.9028 17.0227 15.8131 16.9628 15.7376 16.8873L8.99999 10.1487L2.26234 16.8873C2.10988 17.0398 1.9031 17.1254 1.68749 17.1254C1.47189 17.1254 1.26511 17.0398 1.11265 16.8873C0.960192 16.7349 0.874542 16.5281 0.874542 16.3125C0.874542 16.0969 0.960192 15.8901 1.11265 15.7376L7.85132 8.99999L1.11265 2.26234C0.960192 2.10988 0.874542 1.9031 0.874542 1.68749C0.874542 1.47189 0.960192 1.26511 1.11265 1.11265C1.26511 0.960192 1.47189 0.874542 1.68749 0.874542C1.9031 0.874542 2.10988 0.960192 2.26234 1.11265L8.99999 7.85132L15.7376 1.11265C15.8901 0.960192 16.0969 0.874542 16.3125 0.874542C16.5281 0.874542 16.7349 0.960192 16.8873 1.11265C17.0398 1.26511 17.1254 1.47189 17.1254 1.68749C17.1254 1.9031 17.0398 2.10988 16.8873 2.26234L10.1487 8.99999L16.8873 15.7376Z" fill="black"/>
+                            </svg>
+                    </div>
+                    <ul class="popout_menu">
+                        <a href="">
+                            <li>Shop Juices</li>
+                        </a>
+                        <a href="">
+                            <li>Shop Salads</li>
+                        </a>
+                        <a href="">
+                            <li>Shop Soups</li>
+                        </a>
+                        <a href="./blog.html">
+                            <li>Blog</li>
+                        </a>
+                        <a href="./about.html">
+                            <li>About Us</li>
+                        </a>
+                        <a href="./contact.html">
+                            <li>Contact Us</li>
+                        </a>
                     </ul>
-                </nav>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="row my-3">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
-                    <div class="mb-4 mb-sm-5 mb-md-5 mb-lg-5">
-                        <h5>Let's Connect!</h5>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <form class="d-flex" role="subscribe">
-                            <input class="form-control me-2" type="email" placeholder="Your Email Address" aria-label="Subscribe">
-                            <button class="btn btn-outline-success rounded-5" type="submit">Subscribe</button>
+                    <div>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success rounded-5" type="submit">Search</button>
                         </form>
                     </div>
+                    <div class="menu_mobile_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16" fill="none">
+                            <path d="M16 7.992C16 3.58 12.416 0 8 0C3.584 0 0 3.58 0 7.992C0 10.422 1.104 12.612 2.832 14.082C2.848 14.098 2.864 14.098 2.864 14.114C3.008 14.226 3.152 14.338 3.312 14.45C3.392 14.498 3.456 14.561 3.536 14.625C4.85807 15.5214 6.41871 16.0004 8.016 16C9.61329 16.0004 11.1739 15.5214 12.496 14.625C12.576 14.577 12.64 14.514 12.72 14.465C12.864 14.354 13.024 14.242 13.168 14.13C13.184 14.114 13.2 14.114 13.2 14.098C14.896 12.611 16 10.422 16 7.992ZM8 14.993C6.496 14.993 5.12 14.513 3.984 13.714C4 13.586 4.032 13.459 4.064 13.331C4.15934 12.9841 4.29917 12.651 4.48 12.34C4.656 12.036 4.864 11.764 5.12 11.524C5.36 11.284 5.648 11.061 5.936 10.885C6.24 10.709 6.56 10.581 6.912 10.485C7.26674 10.3894 7.6326 10.3413 8 10.342C9.09065 10.3343 10.1412 10.7526 10.928 11.508C11.296 11.876 11.584 12.308 11.792 12.803C11.904 13.091 11.984 13.395 12.032 13.714C10.8512 14.5442 9.44343 14.9907 8 14.993ZM5.552 7.593C5.41102 7.27022 5.34013 6.9212 5.344 6.569C5.344 6.218 5.408 5.866 5.552 5.546C5.696 5.226 5.888 4.939 6.128 4.699C6.368 4.459 6.656 4.268 6.976 4.124C7.296 3.98 7.648 3.916 8 3.916C8.368 3.916 8.704 3.98 9.024 4.124C9.344 4.268 9.632 4.46 9.872 4.699C10.112 4.939 10.304 5.227 10.448 5.546C10.592 5.866 10.656 6.218 10.656 6.569C10.656 6.937 10.592 7.273 10.448 7.592C10.309 7.90727 10.1138 8.19461 9.872 8.44C9.62653 8.68149 9.33919 8.87633 9.024 9.015C8.36283 9.28671 7.62117 9.28671 6.96 9.015C6.64481 8.87633 6.35747 8.68149 6.112 8.44C5.86981 8.19819 5.67929 7.91068 5.552 7.593ZM12.976 12.899C12.976 12.867 12.96 12.851 12.96 12.819C12.8026 12.3184 12.5707 11.8444 12.272 11.413C11.973 10.9784 11.6056 10.5951 11.184 10.278C10.862 10.0358 10.513 9.83175 10.144 9.67C10.3119 9.55925 10.4674 9.43085 10.608 9.287C10.8465 9.0515 11.056 8.7883 11.232 8.503C11.5864 7.92081 11.7694 7.25049 11.76 6.569C11.7649 6.06451 11.667 5.56432 11.472 5.099C11.2795 4.65064 11.0025 4.24356 10.656 3.9C10.31 3.56003 9.90288 3.28859 9.456 3.1C8.98991 2.90539 8.48906 2.80774 7.984 2.813C7.47887 2.80806 6.97802 2.90605 6.512 3.101C6.06125 3.28919 5.65311 3.56638 5.312 3.916C4.97204 4.26159 4.70059 4.66842 4.512 5.115C4.31705 5.58032 4.21905 6.08051 4.224 6.585C4.224 6.937 4.272 7.273 4.368 7.592C4.464 7.928 4.592 8.232 4.768 8.519C4.928 8.807 5.152 9.063 5.392 9.303C5.536 9.447 5.696 9.574 5.872 9.686C5.50184 9.85206 5.15272 10.0615 4.832 10.31C4.416 10.63 4.048 11.013 3.744 11.429C3.44226 11.8586 3.21008 12.3331 3.056 12.835C3.04 12.867 3.04 12.899 3.04 12.915C1.776 11.636 0.992 9.91 0.992 7.992C0.992 4.14 4.144 0.991 8 0.991C11.856 0.991 15.008 4.14 15.008 7.992C15.0059 9.83196 14.2753 11.5962 12.976 12.899Z" fill="black"/>
+                          </svg>
+                    </div>
+
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 col-xxl-8">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                            <h5>Explore</h5>
-                            <ul class="footer_menu">
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="">All Products</a></li>
-                            </ul>
+                <div class="menu_overlay"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- end -->
+    <!-- tablet -->
+    <header id="tablet-menu">
+        <nav class="container">
+            <div class="row my-4">
+                <div class="col-6">
+                    <h2><a href="./index.html">FSJ</a></h2>
+                </div>
+                <div class="col-6">
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-6" style="width: 99px;">
+                            <div class="mobile_icon_cart d-flex justify-content-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_53_16)">
+                                      <path d="M9 20C9.26522 20 9.51957 20.1054 9.70711 20.2929C9.89464 20.4804 10 20.7348 10 21C10 21.2652 9.89464 21.5196 9.70711 21.7071C9.51957 21.8946 9.26522 22 9 22C8.73478 22 8.48043 21.8946 8.29289 21.7071C8.10536 21.5196 8 21.2652 8 21C8 20.7348 8.10536 20.4804 8.29289 20.2929C8.48043 20.1054 8.73478 20 9 20ZM16 20C16.2652 20 16.5196 20.1054 16.7071 20.2929C16.8946 20.4804 17 20.7348 17 21C17 21.2652 16.8946 21.5196 16.7071 21.7071C16.5196 21.8946 16.2652 22 16 22C15.7348 22 15.4804 21.8946 15.2929 21.7071C15.1054 21.5196 15 21.2652 15 21C15 20.7348 15.1054 20.4804 15.2929 20.2929C15.4804 20.1054 15.7348 20 16 20ZM3.495 2.631L3.6 2.701L5.308 3.981C5.59866 4.1991 5.82441 4.49226 5.961 4.829L6.021 5H18.867C19.1381 4.99993 19.4064 5.05498 19.6556 5.16181C19.9047 5.26863 20.1296 5.425 20.3165 5.62141C20.5033 5.81783 20.6483 6.05018 20.7426 6.30436C20.8369 6.55854 20.8786 6.82923 20.865 7.1L20.852 7.248L20.395 10.903C20.2579 12.0029 19.7591 13.0261 18.9771 13.8117C18.1951 14.5973 17.1743 15.1008 16.075 15.243L15.849 15.266L8.536 15.876L8.796 17H17.5C17.7549 17.0003 18 17.0979 18.1854 17.2728C18.3707 17.4478 18.4822 17.687 18.4972 17.9414C18.5121 18.1958 18.4293 18.4464 18.2657 18.6418C18.1021 18.8373 17.8701 18.9629 17.617 18.993L17.5 19H8.796C8.3716 19.0001 7.95819 18.8651 7.61555 18.6147C7.27291 18.3643 7.01881 18.0114 6.89 17.607L6.847 17.45L4.107 5.58L2.4 4.3C2.2049 4.15377 2.06994 3.9413 2.02051 3.70254C1.97109 3.46378 2.01059 3.21519 2.1316 3.00351C2.25261 2.79184 2.44678 2.63167 2.67761 2.55312C2.90843 2.47458 3.16 2.48307 3.385 2.577L3.495 2.631ZM18.867 7H6.487L8.082 13.906L15.682 13.273C16.3679 13.2159 17.0134 12.9247 17.5101 12.4482C18.0068 11.9718 18.3245 11.339 18.41 10.656L18.867 7Z" fill="black"/>
+                                    </g>
+        
+                                  </svg>
+                            </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                            <h5>Help</h5>
-                            <ul class="footer_menu">
-                                <li><a href="">My Account</a></li>
-                                <li><a href="">Contact Us</a></li>
-                                <li><a href="">FAQ</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                            <h5>Legal</h5>
-                            <ul class="footer_menu">
-                                <li><a href="">Terms of Service</a></li>
-                                <li><a href="">Privacy Policy</a></li>
-                            </ul>
+                        <div class="col-6" style="width: 99px;">
+                            <div class="mobile_icon_menu d-flex justify-content-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 57 30" fill="none">
+                                <rect width="57" height="6" rx="3" fill="black"/>
+                                <rect y="12" width="57" height="6" rx="3" fill="black"/>
+                                <rect y="24" width="57" height="6" rx="3" fill="black"/>
+                              </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mb-3">
-                <div class="col-12 text-center">
-                    <small>Copyright 2023</small>
+            <div>
+                <div class="menu_pop">
+                    <div class="menu_close_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M16.8873 15.7376C16.9628 15.8131 17.0227 15.9028 17.0636 16.0014C17.1044 16.1 17.1254 16.2057 17.1254 16.3125C17.1254 16.4193 17.1044 16.525 17.0636 16.6236C17.0227 16.7222 16.9628 16.8118 16.8873 16.8873C16.8118 16.9628 16.7222 17.0227 16.6236 17.0636C16.525 17.1044 16.4193 17.1254 16.3125 17.1254C16.2057 17.1254 16.1 17.1044 16.0014 17.0636C15.9028 17.0227 15.8131 16.9628 15.7376 16.8873L8.99999 10.1487L2.26234 16.8873C2.10988 17.0398 1.9031 17.1254 1.68749 17.1254C1.47189 17.1254 1.26511 17.0398 1.11265 16.8873C0.960192 16.7349 0.874542 16.5281 0.874542 16.3125C0.874542 16.0969 0.960192 15.8901 1.11265 15.7376L7.85132 8.99999L1.11265 2.26234C0.960192 2.10988 0.874542 1.9031 0.874542 1.68749C0.874542 1.47189 0.960192 1.26511 1.11265 1.11265C1.26511 0.960192 1.47189 0.874542 1.68749 0.874542C1.9031 0.874542 2.10988 0.960192 2.26234 1.11265L8.99999 7.85132L15.7376 1.11265C15.8901 0.960192 16.0969 0.874542 16.3125 0.874542C16.5281 0.874542 16.7349 0.960192 16.8873 1.11265C17.0398 1.26511 17.1254 1.47189 17.1254 1.68749C17.1254 1.9031 17.0398 2.10988 16.8873 2.26234L10.1487 8.99999L16.8873 15.7376Z" fill="black"/>
+                            </svg>
+                    </div>
+                    <ul class="popout_menu">
+                        <a href="">
+                            <li>Shop Juices</li>
+                        </a>
+                        <a href="">
+                            <li>Shop Salads</li>
+                        </a>
+                        <a href="">
+                            <li>Shop Soups</li>
+                        </a>
+                        <a href="./blog.html">
+                            <li>Blog</li>
+                        </a>
+                        <a href="./about.html">
+                            <li>About Us</li>
+                        </a>
+                        <a href="./contact.html">
+                            <li>Contact Us</li>
+                        </a>
+                    </ul>
+                    <div>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success rounded-5" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="menu_mobile_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16" fill="none">
+                            <path d="M16 7.992C16 3.58 12.416 0 8 0C3.584 0 0 3.58 0 7.992C0 10.422 1.104 12.612 2.832 14.082C2.848 14.098 2.864 14.098 2.864 14.114C3.008 14.226 3.152 14.338 3.312 14.45C3.392 14.498 3.456 14.561 3.536 14.625C4.85807 15.5214 6.41871 16.0004 8.016 16C9.61329 16.0004 11.1739 15.5214 12.496 14.625C12.576 14.577 12.64 14.514 12.72 14.465C12.864 14.354 13.024 14.242 13.168 14.13C13.184 14.114 13.2 14.114 13.2 14.098C14.896 12.611 16 10.422 16 7.992ZM8 14.993C6.496 14.993 5.12 14.513 3.984 13.714C4 13.586 4.032 13.459 4.064 13.331C4.15934 12.9841 4.29917 12.651 4.48 12.34C4.656 12.036 4.864 11.764 5.12 11.524C5.36 11.284 5.648 11.061 5.936 10.885C6.24 10.709 6.56 10.581 6.912 10.485C7.26674 10.3894 7.6326 10.3413 8 10.342C9.09065 10.3343 10.1412 10.7526 10.928 11.508C11.296 11.876 11.584 12.308 11.792 12.803C11.904 13.091 11.984 13.395 12.032 13.714C10.8512 14.5442 9.44343 14.9907 8 14.993ZM5.552 7.593C5.41102 7.27022 5.34013 6.9212 5.344 6.569C5.344 6.218 5.408 5.866 5.552 5.546C5.696 5.226 5.888 4.939 6.128 4.699C6.368 4.459 6.656 4.268 6.976 4.124C7.296 3.98 7.648 3.916 8 3.916C8.368 3.916 8.704 3.98 9.024 4.124C9.344 4.268 9.632 4.46 9.872 4.699C10.112 4.939 10.304 5.227 10.448 5.546C10.592 5.866 10.656 6.218 10.656 6.569C10.656 6.937 10.592 7.273 10.448 7.592C10.309 7.90727 10.1138 8.19461 9.872 8.44C9.62653 8.68149 9.33919 8.87633 9.024 9.015C8.36283 9.28671 7.62117 9.28671 6.96 9.015C6.64481 8.87633 6.35747 8.68149 6.112 8.44C5.86981 8.19819 5.67929 7.91068 5.552 7.593ZM12.976 12.899C12.976 12.867 12.96 12.851 12.96 12.819C12.8026 12.3184 12.5707 11.8444 12.272 11.413C11.973 10.9784 11.6056 10.5951 11.184 10.278C10.862 10.0358 10.513 9.83175 10.144 9.67C10.3119 9.55925 10.4674 9.43085 10.608 9.287C10.8465 9.0515 11.056 8.7883 11.232 8.503C11.5864 7.92081 11.7694 7.25049 11.76 6.569C11.7649 6.06451 11.667 5.56432 11.472 5.099C11.2795 4.65064 11.0025 4.24356 10.656 3.9C10.31 3.56003 9.90288 3.28859 9.456 3.1C8.98991 2.90539 8.48906 2.80774 7.984 2.813C7.47887 2.80806 6.97802 2.90605 6.512 3.101C6.06125 3.28919 5.65311 3.56638 5.312 3.916C4.97204 4.26159 4.70059 4.66842 4.512 5.115C4.31705 5.58032 4.21905 6.08051 4.224 6.585C4.224 6.937 4.272 7.273 4.368 7.592C4.464 7.928 4.592 8.232 4.768 8.519C4.928 8.807 5.152 9.063 5.392 9.303C5.536 9.447 5.696 9.574 5.872 9.686C5.50184 9.85206 5.15272 10.0615 4.832 10.31C4.416 10.63 4.048 11.013 3.744 11.429C3.44226 11.8586 3.21008 12.3331 3.056 12.835C3.04 12.867 3.04 12.899 3.04 12.915C1.776 11.636 0.992 9.91 0.992 7.992C0.992 4.14 4.144 0.991 8 0.991C11.856 0.991 15.008 4.14 15.008 7.992C15.0059 9.83196 14.2753 11.5962 12.976 12.899Z" fill="black"/>
+                          </svg>
+                    </div>
+                </div>
+                <div class="menu_overlay"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- end of menu -->
+
+
+    <body>
+        <main id="main-content" role="main">
+            <div class="container">
+                <div class="row">
+                    <h1>Blog</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                        <img src="" alt="" class="img-fluid">
+                        <div>
+                            <h3>The Health Benefits</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
+                            <div class="col-6">Read More</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                        <img src="" alt="" class="img-fluid">
+                        <div>
+                            <h3>The Health Benefits</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
+                            <div class="col-6">Read More</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                        <img src="" alt="" class="img-fluid">
+                        <div>
+                            <h3>The Health Benefits</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
+                            <div class="col-6">Read More</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                        <img src="" alt="" class="img-fluid">
+                        <div>
+                            <h3>The Health Benefits</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
+                            <div class="col-6">Read More</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                        <img src="" alt="" class="img-fluid">
+                        <div>
+                            <h3>The Health Benefits</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
+                            <div class="col-6">Read More</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                        <img src="" alt="" class="img-fluid">
+                        <div>
+                            <h3>The Health Benefits</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><span class="badge text-bg-secondary">Lifestyle</span></div>
+                            <div class="col-6">Read More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="./resources/Js/bootstrap.bundle.min.js"></script>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row my-3">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                        <div class="mb-4 mb-sm-5 mb-md-5 mb-lg-5 mx-3">
+                            <h5>Let's Connect!</h5>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <form class="d-flex" role="subscribe">
+                                <input class="form-control me-2" type="email" placeholder="Your Email Address" aria-label="Subscribe">
+                                <button class="btn btn-outline-success rounded-5" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 col-xxl-8">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <h5>Explore</h5>
+                                <ul class="footer_menu">
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="./blog.html">Blog</a></li>
+                                    <li><a href="./all-products.html">All Products</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <h5>Help</h5>
+                                <ul class="footer_menu">
+                                    <li><a href="./login.html">My Account</a></li>
+                                    <li><a href="./contact.html">Contact Us</a></li>
+                                    <li><a href="./faq.html">FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <h5>Legal</h5>
+                                <ul class="footer_menu">
+                                    <li><a href="/Term.html">Terms of Service</a></li>
+                                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 text-center">
+                        <small>Copyright 2023</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./resources/Js/bootstrap.bundle.min.js"></script>
+        <script src="./resources/Js/skip.js"></script>
+        <script src="./resources/Js/menu.js"></script>
 
-</body>
+    </body>
 
 </html>

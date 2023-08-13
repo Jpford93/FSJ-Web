@@ -10,6 +10,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 main {
@@ -31,6 +32,60 @@ footer {
     z-index: 1000;
     transition: top 0.3s;
 }
+
+
+/* Business Branding */
+
+
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&family=Mulish:wght@200;300;500;600;700;800;900&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cabin', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 500;
+}
+
+h5,
+h6 {
+    font-weight: 400;
+}
+
+p,
+li,
+a,
+button {
+    font-family: 'Mulish', sans-serif;
+}
+
+p,
+a {
+    font-weight: 300;
+}
+
+li {
+    font-weight: 200;
+}
+
+button {
+    font-weight: 400;
+}
+
+
+/* Color Scheme */
 
 ul.main-desktop {
     display: flex;
@@ -61,19 +116,35 @@ ul.footer_menu {
 
 /* Mobile */
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    body {
+        margin-top: 40px;
+    }
+}
 
 
 /* tablet and Medium Screen */
 
-@media (min-width: 577px) and (max-width: 768px) {}
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        margin-top: 50px;
+    }
+}
 
 
 /* Desktop and large screen */
 
-@media (min-width: 769px) and (max-width: 992px) {}
+@media (min-width: 769px) and (max-width: 992px) {
+    body {
+        margin-top: 50px;
+    }
+}
 
 
 /* X-Large Screen */
 
-@media (max-width: 993px) {}
+@media (min-width: 993px) {
+    body {
+        margin-top: 50px;
+    }
+}
