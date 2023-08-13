@@ -32,6 +32,16 @@ footer {
     transition: top 0.3s;
 }
 
+ul.main-desktop {
+    display: flex;
+}
+
+.main-desktop li {
+    list-style: none;
+    padding-left: 0;
+    margin-right: 15px;
+}
+
 
 /* Footer */
 
