@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Mulish:wght@200;300;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./resources/css/cart.css">
     <link rel="stylesheet" href="./resources/css/main.css">
     <link rel="stylesheet" href="./resources/css/header.css">
     <link rel="stylesheet" href="./resources/css/index.css">
@@ -259,47 +259,82 @@
                         </ol>
                     </nav>
                 </div>
-                <div class="row my-4">
+                <div class="row my-3 text-center">
                     <div class="col-6">
                         <h4>Continue Shopping</h4>
                     </div>
                     <div class="col-6">
-                        <button>Shop Now</button>
+                        <button class="rounded-5">Shop Now</button>
                     </div>
                 </div>
-                <div class="row my-5">
-                    <h2>Your Order</h2>
+                <div class="row mt-2 mb-5">
+                    <!-- first column -->
+                    <h2 class="my-4">Your Order</h2>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
-                        <div class="row my-4">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="row item-list-cart my-4">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
-                                        <div class="text-center">
-                                            <img src="https://s3-alpha-sig.figma.com/img/fd09/6bd8/a5e02a5a5d9a80cf67b11ce5ce3ad40b?Expires=1692576000&Signature=Ja4P59iEgIyRqTLHZcKbofbtsb6rEO0ImjZpZ1Aax-FUd159q-W06iy6m0v3BwXfQCWvGu4cgukuXdYtbUJPcoDIPHWQ-nKub7sr2KRpEVFmdz0Sv5ptfIqZJ3KawfPQ5eeeZ7lhLVSXb83SDzZbY2E0Kdp1jcwRL-CRDLl3JHuIORw0eNcn2OfYnAKB8Mo~RnP3VC3xdxiP5I0fO3T0ONUc~Zq5L-5OtH5Nc4tvbjI2PMxUJoENJOjrUG0WsXSp9vm0jekWe1lTQ-hTxP9XqprnBtHNHvT2WEZF2GMaFukPtpaQhyRt0PP~jOUXIWZYKqfRfqliSwZ5PxOthMa2sg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                                alt="" class="cart-item img-fluid">
-                                        </div>
+                                    <div class="">
+                                        <img src="https://s3-alpha-sig.figma.com/img/fd09/6bd8/a5e02a5a5d9a80cf67b11ce5ce3ad40b?Expires=1692576000&Signature=Ja4P59iEgIyRqTLHZcKbofbtsb6rEO0ImjZpZ1Aax-FUd159q-W06iy6m0v3BwXfQCWvGu4cgukuXdYtbUJPcoDIPHWQ-nKub7sr2KRpEVFmdz0Sv5ptfIqZJ3KawfPQ5eeeZ7lhLVSXb83SDzZbY2E0Kdp1jcwRL-CRDLl3JHuIORw0eNcn2OfYnAKB8Mo~RnP3VC3xdxiP5I0fO3T0ONUc~Zq5L-5OtH5Nc4tvbjI2PMxUJoENJOjrUG0WsXSp9vm0jekWe1lTQ-hTxP9XqprnBtHNHvT2WEZF2GMaFukPtpaQhyRt0PP~jOUXIWZYKqfRfqliSwZ5PxOthMa2sg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                            alt="" class="cart-item img-fluid">
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
-                                        <div class="">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="cart-item-section">
                                             <h5>Passion Fruit Juice</h5>
                                             <small>10 Juices - $7.99</small>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
-                                <div class="">
-                                    <h5>Quantity</h5>
-                                    <div class="quantity-button my-4">
-                                        <button class="minus">-</button>
-                                        <span class="quantity">1</span>
-                                        <button class="plus">+</button>
+                                    <div class="col-lg-6">
+                                        <div class="cart-item-quantity">
+                                            <h5>Quantity</h5>
+                                            <div class="quantity-button my-4">
+                                                <button class="minus">-</button>
+                                                <span class="quantity">1</span>
+                                                <button class="plus">+</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
-                                <div class="mb-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                                <div class="cart-item-pricing">
+                                    <h5>Price</h5>
+                                    <h4>$79.99</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="border-bottom: 1px solid black;"></div>
+                        <div class="row item-list-cart my-4">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <div class="row">
+                                    <div class="">
+                                        <img src="https://s3-alpha-sig.figma.com/img/fd09/6bd8/a5e02a5a5d9a80cf67b11ce5ce3ad40b?Expires=1692576000&Signature=Ja4P59iEgIyRqTLHZcKbofbtsb6rEO0ImjZpZ1Aax-FUd159q-W06iy6m0v3BwXfQCWvGu4cgukuXdYtbUJPcoDIPHWQ-nKub7sr2KRpEVFmdz0Sv5ptfIqZJ3KawfPQ5eeeZ7lhLVSXb83SDzZbY2E0Kdp1jcwRL-CRDLl3JHuIORw0eNcn2OfYnAKB8Mo~RnP3VC3xdxiP5I0fO3T0ONUc~Zq5L-5OtH5Nc4tvbjI2PMxUJoENJOjrUG0WsXSp9vm0jekWe1lTQ-hTxP9XqprnBtHNHvT2WEZF2GMaFukPtpaQhyRt0PP~jOUXIWZYKqfRfqliSwZ5PxOthMa2sg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                            alt="" class="cart-item img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="cart-item-section">
+                                            <h5>Passion Fruit Juice</h5>
+                                            <small>10 Juices - $7.99</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="cart-item-quantity">
+                                            <h5>Quantity</h5>
+                                            <div class="quantity-button my-4">
+                                                <button class="minus">-</button>
+                                                <span class="quantity">1</span>
+                                                <button class="plus">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                                <div class="cart-item-pricing">
                                     <h5>Price</h5>
                                     <h4>$79.99</h4>
                                 </div>
@@ -307,19 +342,19 @@
                         </div>
                         <div style="border-bottom: 1px solid black;"></div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="item-checkout col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                         <div class="row my-4">
                             <h6>New Customer? <a href="">Create an account</a></h6>
                         </div>
-                        <div class="row">
+                        <div class="row item-checkout-2">
                             <div class="col-6 mb-3">
                                 <h4>Subtotal</h4>
                             </div>
                             <div class="col-6 mb-3">
-                                <h4>$79.99</h4>
+                                <h4>$159.98</h4>
                             </div>
                             <div class="col-6 mb-3">
-                                <h4>discount</h4>
+                                <h4>Discount</h4>
                             </div>
                             <div class="col-6 mb-3">
                                 <h4>$0.00</h4>
@@ -328,15 +363,16 @@
                                 <h4>Total</h4>
                             </div>
                             <div class="col-6 mb-3">
-                                <h4>$79.99</h4>
+                                <h4>$159.98</h4>
+                            </div>
+                            <div class="my-4">
+                                <button class="rounded-5">Continue to payment</button>
+                            </div>
+                            <div class="my-4">
+                                <button class="rounded-5">Update</button>
                             </div>
                         </div>
-                        <div class="my-4">
-                            <button class="rounded-5">Continue to payment</button>
-                        </div>
-                        <div class="my-4">
-                            <button class="rounded-5">Update</button>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -384,7 +420,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-12 text-center">
-                        <small>Copyright 2023</small>
+                        <small>&copy; 2023. Freshly Squeezed Juice Bar. All Rights Reserved</small>
                     </div>
                 </div>
             </div>
