@@ -64,6 +64,48 @@
     }
 }
 
+@media (min-width: 500px) and (max-width: 576px) {
+    .menu_pop {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 590px) {
+    .menu_pop {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 591px) and (max-width: 620px) {
+    .menu_pop {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 621px) and (max-width: 699px) {
+    .menu_pop {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 860px) {
+    .menu_pop {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 861px) and (max-width: 999px) {
+    .menu_pop {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .menu_pop {
+        width: 130vw;
+    }
+}
+
 
 /* tablet and Medium Screen */
 
@@ -82,7 +124,6 @@
         background-color: #ECFEFF;
         height: 100vh;
         position: fixed;
-        width: 25vw;
     }
     .menu_overlay {
         background-color: rgba(77, 79, 98, 0.50);
