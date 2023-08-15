@@ -1,0 +1,6 @@
+img.product-img-cat {
+    object-fit: cover;
+    height: 459px;
+    width: 306px;
+    border-radius: 15px;
+}
