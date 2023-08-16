@@ -27,7 +27,7 @@
     }
     .menu_pop {
         z-index: 100;
-        background-color: #ECFEFF;
+        background-color: #fff;
         height: 100vh;
         position: fixed;
         width: 55vw;
@@ -81,14 +81,14 @@
 
 @media (min-width: 591px) and (max-width: 620px) {
     .menu_pop {
-        width: 40vw;
+        width: 50vw;
         left: 0;
     }
 }
 
 @media (min-width: 621px) and (max-width: 699px) {
     .menu_pop {
-        width: 40vw;
+        width: 50vw;
         left: 0;
     }
 }
@@ -129,10 +129,11 @@
     }
     .menu_pop {
         z-index: 100;
-        background-color: #ECFEFF;
+        background-color: #fff;
         height: 100vh;
         position: fixed;
         left: 0;
+        width: 30vw;
     }
     .menu_overlay {
         background-color: rgba(77, 79, 98, 0.50);
@@ -169,10 +170,10 @@
 @media (min-width: 1000px) and (max-width: 1399px) {
     .menu_pop {
         z-index: 100;
-        background-color: #ECFEFF;
+        background-color: #fff;
         height: 100vh;
         position: fixed;
-        width: 20vw;
+        width: 30vw;
         left: 0;
     }
 }
