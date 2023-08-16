@@ -95,9 +95,10 @@ button {
 
 /* Color Scheme */
 
-body {
+
+/* body {
     background-color: #fcf6da;
-}
+} */
 
 main {
     padding: 20px 0;
@@ -207,6 +208,16 @@ a {
 .author {
     font-weight: bold;
     color: #595F72;
+}
+
+.svg-icon {
+    transition: fill 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.svg-icon:hover {
+    fill: #4cac55;
+    /* Change the color on hover */
 }
 
 
