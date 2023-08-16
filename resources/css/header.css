@@ -31,6 +31,7 @@
         height: 100vh;
         position: fixed;
         width: 55vw;
+        left: 0;
     }
     .menu_overlay {
         background-color: rgba(77, 79, 98, 0.50);
@@ -67,42 +68,49 @@
 @media (min-width: 500px) and (max-width: 576px) {
     .menu_pop {
         width: 60vw;
+        left: 0;
     }
 }
 
 @media (min-width: 577px) and (max-width: 590px) {
     .menu_pop {
         width: 50vw;
+        left: 0;
     }
 }
 
 @media (min-width: 591px) and (max-width: 620px) {
     .menu_pop {
         width: 40vw;
+        left: 0;
     }
 }
 
 @media (min-width: 621px) and (max-width: 699px) {
     .menu_pop {
         width: 40vw;
+        left: 0;
     }
 }
 
 @media (min-width: 700px) and (max-width: 860px) {
     .menu_pop {
         width: 40vw;
+        left: 0;
     }
 }
 
 @media (min-width: 861px) and (max-width: 999px) {
     .menu_pop {
         width: 50vw;
+        left: 0;
     }
 }
 
 @media (min-width: 1000px) and (max-width: 1199px) {
     .menu_pop {
         width: 130vw;
+        left: 0;
     }
 }
 
@@ -124,6 +132,7 @@
         background-color: #ECFEFF;
         height: 100vh;
         position: fixed;
+        left: 0;
     }
     .menu_overlay {
         background-color: rgba(77, 79, 98, 0.50);
@@ -164,6 +173,7 @@
         height: 100vh;
         position: fixed;
         width: 20vw;
+        left: 0;
     }
 }
 

@@ -37,6 +37,10 @@ a {
     text-decoration: none
 }
 
+.product-area {
+    margin-bottom: 12px
+}
+
 
 /* Business Branding */
 
@@ -91,6 +95,123 @@ button {
 
 /* Color Scheme */
 
+body {
+    background-color: #fcf6da;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.main_menu a {
+    font-weight: 400;
+}
+
+.popout_menu a li {
+    font-weight: 400;
+    color: #484C5B;
+}
+
+.popout_menu a li:hover {
+    color: #449C4D;
+}
+
+.menu_mobile_button a {
+    color: #484c48;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.menu_mobile_button a:hover {
+    color: #449C4D;
+}
+
+.main_menu li a {
+    color: #484C5B;
+}
+
+.main_menu li a:hover {
+    color: #449C4D;
+}
+
+h1 {
+    color: #367E3C;
+}
+
+h2 {
+    color: #4cac55;
+}
+
+h3 {
+    color: #81879C;
+}
+
+h5 {
+    color: #CF447C;
+}
+
+p {
+    color: #595F72;
+}
+
+.category-items a {
+    color: #f88435;
+}
+
+footer {
+    background-color: #D3D6E0;
+}
+
+footer a,
+p {
+    color: #484C5B;
+}
+
+footer a {
+    font-weight: 400;
+}
+
+footer a:hover {
+    color: #CF447C;
+}
+
+h3.font-color {
+    color: #CF447C;
+}
+
+.cta-login a {
+    color: #CF447C;
+    text-decoration: underline;
+}
+
+.breadcrumb-item a {
+    color: #CF447C;
+}
+
+.juice-one {
+    color: #5583AC;
+    border: #5583AC solid 2px;
+    padding: 5px 17px;
+    border-radius: 20px;
+}
+
+a {
+    color: #5583AC;
+}
+
+.juice-one:hover {
+    color: #fff;
+    background-color: #5583AC;
+}
+
+.author {
+    font-weight: bold;
+    color: #595F72;
+}
+
+
+/* end of color scheme */
+
 ul.main-desktop {
     display: flex;
 }
@@ -115,6 +236,10 @@ ul.footer_menu {
 
 .footer_menu>li>a {
     text-decoration: none;
+}
+
+footer {
+    padding-top: 50px;
 }
 
 
